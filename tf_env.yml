@@ -1,0 +1,21 @@
+name: tf_env_updated
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8  # TensorFlow 2.x es compatible con Python 3.8 y superiores.
+  # Última versión estable (verifica según tu necesidad).
+  - matplotlib
+  - numpy
+  - scipy
+  - h5py
+  - protobuf
+  - grpcio
+  - pandas  # Muy útil para manejar conjuntos de datos.
+  - scikit-learn  # Para preprocesamiento adicional o evaluación.
+  - jupyterlab  # Para trabajar con notebooks interactivos.
+  - pip
+  - pip:
+      - tensorflow-addons  # Complementos útiles para TensorFlow.
+      - tensorflow-datasets  # Conjuntos de datos predefinidos.
+      - keras  # API de alto nivel incluida en TensorFlow 2.x.
